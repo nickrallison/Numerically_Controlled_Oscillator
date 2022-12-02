@@ -2,10 +2,10 @@ module Phase_Accumulator #(parameter width = 26, parameter decimals = 16)
 								  (input  logic 					 	 clk,
 																			 reset_n,
 									input  logic  [width-1:0]    increment,
-									output logic  [width-1:0] index,
-									output logic [width-1:0] next_index);
+									output logic  [width-1:0] index);
 									
-	//logic [LUT_Size + decimals + 1:0] next_index;
+	
+	logic [width-1:0] next_index;
 	
 	always_ff @(posedge clk) begin
 		if (!reset_n)

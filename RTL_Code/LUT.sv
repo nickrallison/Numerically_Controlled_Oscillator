@@ -11,7 +11,7 @@ module LUT #(parameter width = 32, parameter decimals = 16, parameter LUT_Size =
 
 	
 	initial begin
-    $readmemh("C:/Users/nickr/OneDrive/Documents/GitHub/ENEL_453_Digital_Systems_And_HDLs/Lab4/RTL_Code/LUT.txt",my_rom);
+    $readmemh("LUT.txt",my_rom);
    end
 	
 	always @(posedge clk) begin

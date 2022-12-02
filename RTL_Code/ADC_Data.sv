@@ -46,7 +46,7 @@ module ADC_Data(
     
   averager( // below are the connections for the instantiation
     .clk     (clk),
-//    .reset_n (reset_n),
+    .reset_n (reset_n),
     .EN      (response_valid_out),
     .Din     (ADC_raw_temp),
     .Q       (ADC_out_ave));
